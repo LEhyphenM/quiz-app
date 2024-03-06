@@ -1,0 +1,33 @@
+//Question.tsx
+import React from 'react';
+ 
+interface Props {
+    question: string;
+    choices: string[];
+    answer: string;
+    onAnswer: (answer: string) => void;
+}
+
+const Question: React.FC<Props> = (
+  { question, choices, onAnswer }) => {
+  return (
+      <div className="d-flex 
+                      justify-content-center 
+                      align-center 
+                      text-center 
+                      flex-column">
+          <h2 className="">{question}</h2>
+          <div className="">
+              {choices.map((choice) => (
+                <button key={choice}
+                        className="btn btn-success"
+                        onClick={() => onAnswer(choice)}>
+                          {choice}
+                </button>
+              ))}
+          </div>
+      </div>
+  );
+};
+
+export default Question;

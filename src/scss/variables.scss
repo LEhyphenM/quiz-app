@@ -1,0 +1,19 @@
+$size1: 8px;
+$size2: 12px;
+$size3: 18px;
+$size4: 24px;
+$size5: 36px;
+$size6: 48px;
+$background:#172626;
+$text:#F2F2F2;
+$primary:#1F7373;
+$accent:#2E8C60;
+$highlight:#5E75F2;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
